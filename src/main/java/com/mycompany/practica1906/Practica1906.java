@@ -8,7 +8,7 @@ package com.mycompany.practica1906;
 public class Practica1906 {
 
     public static void main(String[] args) {
-        System.out.println("No tocar");
+  
         IGatos gt=new Gatos(5);
         
         Gato gato1=new Gato("Pecas", 2 );
@@ -19,6 +19,17 @@ public class Practica1906 {
         System.out.println("Datos de Gatos");
         gt.imprimirDatos();
         
+        System.out.println("Datos de Perro");
+        
+        IPerros x = new Perros (2);
+        
+        Perro perroU = new Perro ("Elinor", 4);
+        Perro perroD = new Perro ("Bela", 5);
+        
+        x.agregarPerros(perroU);
+        x.agregarPerros(perroD);
+        
+        x.imprimirDatosP();
         
     }
 }
